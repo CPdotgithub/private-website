@@ -82,7 +82,7 @@ def register_blueprints(app):
     app.register_blueprint(blog_bp)
     app.register_blueprint(admin_bp,url_prefix='/admin')
     app.register_blueprint(auth_bp,url_prefix='/auth') 
-    app.register_blueprint(video_bp,url_prefix='/videos')
+    #app.register_blueprint(video_bp,url_prefix='/videos')
     #app.register_blueprint(api_v1,url_prefix='/api/v1')
 
 
