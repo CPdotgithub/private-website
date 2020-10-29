@@ -14,7 +14,7 @@ from cpblog.settings import Operations
 
 
 def generate_token(user, operation, expire_in=None, **kwargs):
-    s = Serializer(current_app.config['SECRET_KEY'], expire_in)
+    s = Serializer(current_app.config['SECRET_KEY'], expire_in=3600)
 
     data = {'id': user.id, 'operation': operation}
     data.update(**kwargs)
@@ -32,7 +32,7 @@ def validate_token(user, token, operation, new_password=None):
     if operation != data.get('operation') or user.id != data.get('id'):
         return False
 
-    if operation == Operations.CONFIRM:
+    if operation == 'confirm':
         user.confirmed = True
     elif operation == Operations.RESET_PASSWORD:
         user.set_password(new_password)

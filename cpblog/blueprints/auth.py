@@ -79,7 +79,7 @@ def confirm(token):
     if current_user.confirmed:
         return redirect(url_for('blog.index'))
 
-    if validate_token(user=current_user, token=token, operation=Operations.CONFIRM):
+    if validate_token(user=current_user, token=token, operation='confirm'):
         flash('账户确认.', 'success')
         return redirect(url_for('blog.index'))
     else:

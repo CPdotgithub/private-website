@@ -21,3 +21,6 @@ class User(Base):
 engine = create_engine('mysql+pymysql://root:cp13177004359@localhost:3306/data')
 
 DBSession = sessionmaker(bind=engine)
+
+
+/root/.local/share/virtualenvs/private-website-jydO6slW/bin
