@@ -12,7 +12,7 @@ from cpblog.models import Admin,Category,Post,Comment,User
 from cpblog.blueprints.admin import admin_bp
 from cpblog.blueprints.auth import auth_bp
 from cpblog.blueprints.blog import blog_bp
-from cpblog.blueprints.video import video_bp
+#from cpblog.blueprints.video import video_bp
 #from cpblog.apis.v1 import api_v1
 
 

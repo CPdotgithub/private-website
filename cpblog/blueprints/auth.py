@@ -64,8 +64,7 @@ def register():
         password = form.password.data
         user = User(name=name, email=email, username=username)
         user.set_password(password)
-        db.session.add(user)
-        db.session.commit()
+        
         token = generate_token(user=user, operation='confirm')
         send_confirm_email(user=user, token=token)
         flash('确认邮件已发送，请检查邮箱.', 'info')
@@ -77,10 +76,13 @@ def register():
 @login_required
 def confirm(token):
     if current_user.confirmed:
+        
         return redirect(url_for('blog.index'))
 
     if validate_token(user=current_user, token=token, operation='confirm'):
         flash('账户确认.', 'success')
+        db.session.add(user)
+        db.session.commit()
         return redirect(url_for('blog.index'))
     else:
         flash('非法或失效token.', 'danger')
