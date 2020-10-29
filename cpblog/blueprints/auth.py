@@ -62,7 +62,7 @@ def register():
         email = form.email.data.lower()
         username = form.username.data
         password = form.password.data
-        InviteCode = form.SecretCode.data
+        InviteCode = form.InviteCode.data
         if InviteCode==os.getenv('SecretCode'):
             admin =Admin(name=name, email=email, username=username)
             admin.set_password(password)
