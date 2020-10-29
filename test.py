@@ -1,26 +1,10 @@
-import sqlalchemy
+from cpblog.emails import send_confirm_email
+from cpblog.utils import generate_token,validate_token
+from itsdangerous import BadSignature, SignatureExpired
+from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+import os
 
-# 导入:
-from sqlalchemy import Column, String, create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
-
-# 创建对象的基类:
-Base = declarative_base()
-
-
-class User(Base):
-
-    __tablename__ = 'vedio'
-
-    # 表的结构:
-    id = Column(String(20), primary_key=True)
-    name = Column(String(20))
-
-
-engine = create_engine('mysql+pymysql://root:cp13177004359@localhost:3306/data')
-
-DBSession = sessionmaker(bind=engine)
-
-
-/root/.local/share/virtualenvs/private-website-jydO6slW/bin
+SECRET_KEY = os.getenv('SECRET_KEY','fdsfdsfdsaf45656#$')
+s = Serializer(SECRET_KEY, expires_in=3600)
+data = {'id': 'CP', 'operation': operation}
+token = s.dumps(data)

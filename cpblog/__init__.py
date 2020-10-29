@@ -8,7 +8,7 @@ from flask_sqlalchemy import get_debug_queries
 from flask_wtf.csrf import CSRFError
 from cpblog.settings import config
 from cpblog.extensions import bootstrap,db, login_manager, csrf, ckeditor, mail, migrate
-from cpblog.models import Admin,Category,Post,Comment,User
+from cpblog.models import Admin,Category,Post,Comment
 from cpblog.blueprints.admin import admin_bp
 from cpblog.blueprints.auth import auth_bp
 from cpblog.blueprints.blog import blog_bp
@@ -166,21 +166,21 @@ def register_commands(app):
             db.session.add(admin)
            
         
-        user = User.query.first()
-        if user is not None:
+        admin = Admin.query.first()
+        if admin is not None:
             click.echo('Creating the User...')
-            user.username = username
-            user.set_password(password)
-            user.email='1633477479@qq.com'
+            admin.username = username
+            admin.set_password(password)
+            admin.email='1633477479@qq.com'
         else:
             click.echo('Creating the temporary administrator account...')
-            user = User(
-                username=username,
+            admin = Admin(
+                username='CP',
                 email = '1633477479@qq.com',
                 confirmed=True
             )
-            user.set_password(password)
-            db.session.add(user)
+            admin.set_password(password)
+            db.session.add(admin)
 
 
 

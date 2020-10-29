@@ -183,3 +183,657 @@ Traceback (most recent call last):
   File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: vedios/_vedios.html
+2020-10-30 00:33:56,453 - cpblog - ERROR - Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/auth.py", line 69, in register
+    token = generate_token(user=user, operation='confirm')
+  File "/home/cp/cpdotgithub/private-website/cpblog/utils.py", line 17, in generate_token
+    s = Serializer(current_app.config['SECRET_KEY'], expire_in=3600)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/itsdangerous/jws.py", line 172, in __init__
+    JSONWebSignatureSerializer.__init__(self, secret_key, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'expire_in'
+2020-10-30 00:34:56,591 - cpblog - ERROR - Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/auth.py", line 69, in register
+    token = generate_token(user=user, operation='confirm')
+  File "/home/cp/cpdotgithub/private-website/cpblog/utils.py", line 17, in generate_token
+    s = Serializer(current_app.config['SECRET_KEY'], expire_in=3600)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/itsdangerous/jws.py", line 172, in __init__
+    JSONWebSignatureSerializer.__init__(self, secret_key, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'expire_in'
+2020-10-30 00:39:02,004 - cpblog - ERROR - Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/auth.py", line 69, in register
+    token = generate_token(user=user, operation='confirm')
+  File "/home/cp/cpdotgithub/private-website/cpblog/utils.py", line 17, in generate_token
+    s = Serializer(current_app.config['SECRET_KEY'], expire_in=3600)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/itsdangerous/jws.py", line 172, in __init__
+    JSONWebSignatureSerializer.__init__(self, secret_key, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'expire_in'
+2020-10-30 03:13:38,993 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-10-30 03:13:39,663 - cpblog - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 115, in page_not_found
+    return render_template('errors/404.html'), 404
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-10-30 03:13:43,608 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-10-30 03:13:44,080 - cpblog - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 115, in page_not_found
+    return render_template('errors/404.html'), 404
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-10-30 03:15:10,562 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-10-30 03:15:11,176 - cpblog - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'admin.email' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 115, in page_not_found
+    return render_template('errors/404.html'), 404
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 838, in update_template_context
+    context.update(func())
+  File "/home/cp/cpdotgithub/private-website/cpblog/__init__.py", line 97, in make_template_context
+    admin = Admin.query.first()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/cp/cpdotgithub/private-website/.venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'admin.email' in 'field list'")
+[SQL: SELECT `admin`.id AS admin_id, `admin`.username AS admin_username, `admin`.password_hash AS admin_password_hash, `admin`.email AS admin_email, `admin`.blog_title AS admin_blog_title, `admin`.blog_sub_title AS admin_blog_sub_title, `admin`.name AS admin_name, `admin`.member_since AS admin_member_since, `admin`.about AS admin_about, `admin`.confirmed AS admin_confirmed 
+FROM `admin` 
+ LIMIT %(param_1)s]
+[parameters: {'param_1': 1}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)

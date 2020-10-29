@@ -3,7 +3,7 @@ from wtforms import StringField,PasswordField,SubmitField,BooleanField,TextAreaF
 from wtforms.validators import DataRequired,Length,Regexp,EqualTo,Optional
 from wtforms import ValidationError
 from flask_login import current_user
-from cpblog.models import User
+from cpblog.models import Admin
 
 
 class EditProfileForm(FlaskForm):
@@ -25,7 +25,7 @@ class ChangeEmailForm(FlaskForm):
     submit = SubmitField()
 
     def validate_email(self, field):
-        if User.query.filter_by(email=field.data.lower()).first():
+        if Admin.query.filter_by(email=field.data.lower()).first():
             raise ValidationError('The email is already in use.')
 
 class ChangePasswordForm(FlaskForm):

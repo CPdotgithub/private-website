@@ -7,7 +7,7 @@ from flask import render_template, flash, redirect, url_for, current_app,request
 from flask_login import login_required, current_user
 from cpblog.decorators import confirm_required, permission_required
 from cpblog.extensions import db
-from cpblog.models import User,Post,Comment,Category
+from cpblog.models import Admin,Post,Comment,Category
 from cpblog.forms.blog import AdminCommentForm,CommentForm
 from cpblog.utils import redirect_back
 from cpblog.emails import send_new_comment_email,send_new_reply_email

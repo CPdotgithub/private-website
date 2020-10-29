@@ -4,13 +4,13 @@ from functools import wraps
 from flask import g,current_app,request
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer,BadSignature,SignatureExpired
 from cpblog.apis.v1.errors import api_abort,invalid_token,token_missing
-from cpblog.models import User
+from cpblog.models import Admin
   
 
-def generate_token(user):
+def generate_token(admin):
     expiration = 3600
     s = Serializer(current_app.config["SECRET_KEY"],expires_in=expiration)
-    token = s.dumps({"id":user.id}).decode("ascii")
+    token = s.dumps({"id":admin.id}).decode("ascii")
     return token ,expiration
 
 
@@ -20,10 +20,10 @@ def validate_token(token):
         data = s.loads(token)
     except (BadSignature,SignatureExpired):
         return False
-    user = User.query.get(data["id"])
-    if user is None:
+    admin = Admin.query.get(data["id"])
+    if admin is None:
         return False
-    g.current_user = user
+    g.current_user = admin
     return True
 
 def get_token():

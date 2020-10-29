@@ -3,7 +3,7 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms import ValidationError
 from wtforms.validators import DataRequired, Length,  EqualTo, Regexp
 
-from cpblog.models import User
+from cpblog.models import Admin
 
 
 class LoginForm(FlaskForm):
@@ -19,14 +19,15 @@ class RegisterForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(1, 20),Regexp('^[a-zA-Z0-9]*$',message='只能字母数字.')])
     password = PasswordField('Password', validators=[DataRequired(), Length(8, 128), EqualTo('password2')])
     password2 = PasswordField('Confirm password', validators=[DataRequired()])
+    InviteCode = StringField('InviteCode', validators=[DataRequired()])
     submit = SubmitField()
 
     def validate_email(self, field):
-        if User.query.filter_by(email=field.data.lower()).first():
+        if Admin.query.filter_by(email=field.data.lower()).first():
             raise ValidationError('邮箱已注册.')
 
     def validate_username(self, field):
-        if User.query.filter_by(username=field.data).first():
+        if Admin.query.filter_by(username=field.data).first():
             raise ValidationError('用户名已存在.')
 
 

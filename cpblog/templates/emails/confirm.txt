@@ -1,4 +1,4 @@
-Hello {{ user.username }},
+Hello {{ admin.username }},
 
 Welcome to Albumy!
 

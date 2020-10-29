@@ -1,12 +1,12 @@
 from flask import render_template, flash, redirect, url_for, Blueprint
 from flask_login import login_user, logout_user, login_required, current_user, login_fresh, confirm_login
-
+import os
 from cpblog.settings import Operations
 from cpblog.emails import send_confirm_email,send_reset_password_email
 from cpblog.extensions import db
 from cpblog.forms.auth import LoginForm,RegisterForm,ForgetPasswordForm, ResetPasswordForm
-from cpblog.models import User
 from cpblog.utils import generate_token, validate_token, redirect_back
+from cpblog.models import Admin
 
 auth_bp = Blueprint('auth',__name__)
 
@@ -18,11 +18,11 @@ def login():
 
     form = LoginForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data.lower()).first()
-        if user is not None and user.validate_password(form.password.data):
-            if login_user(user, form.remember_me.data):
+        admin = Admin.query.filter_by(email=form.email.data.lower()).first()
+        if admin is not None and admin.validate_password(form.password.data):
+            if login_user(admin, form.remember_me.data):
                 flash('Login success.', 'info')
-                return redirect_back()
+                return redirect(url_for('blog.index'))
             else:
                 flash('Your account is blocked.', 'warning')
                 return redirect(url_for('blog.index'))
@@ -62,13 +62,18 @@ def register():
         email = form.email.data.lower()
         username = form.username.data
         password = form.password.data
-        user = User(name=name, email=email, username=username)
-        user.set_password(password)
-        
-        token = generate_token(user=user, operation='confirm')
-        send_confirm_email(user=user, token=token)
-        flash('确认邮件已发送，请检查邮箱.', 'info')
-        return redirect(url_for('.login'))
+        InviteCode = form.SecretCode.data
+        if InviteCode==os.getenv('SecretCode'):
+            admin =Admin(name=name, email=email, username=username)
+            admin.set_password(password)
+            db.session.add(admin)
+            db.session.commit()
+            token = generate_token(admin=admin, operation='confirm')
+            send_confirm_email(admin=admin, token=token)
+            flash('确认邮件已发送，请检查邮箱.', 'info')
+            return redirect(url_for('.login'))
+        else:
+            flash("邀请码错误" ,'info')
     return render_template('auth/register.html', form=form)
 
 
@@ -76,13 +81,12 @@ def register():
 @login_required
 def confirm(token):
     if current_user.confirmed:
-        
         return redirect(url_for('blog.index'))
 
-    if validate_token(user=current_user, token=token, operation='confirm'):
+    if validate_token(admin=current_user, token=token, operation='confirm'):
+        print(token)
         flash('账户确认.', 'success')
-        db.session.add(user)
-        db.session.commit()
+        
         return redirect(url_for('blog.index'))
     else:
         flash('非法或失效token.', 'danger')
@@ -95,8 +99,8 @@ def resend_confirm_email():
     if current_user.confirmed:
         return redirect(url_for('blog.index'))
 
-    token = generate_token(user=current_user, operation=Operations.CONFIRM)
-    send_confirm_email(user=current_user, token=token)
+    token = generate_token(admin=current_user, operation=Operations.CONFIRM)
+    send_confirm_email(admin=current_user, token=token)
     flash('新邮箱已设置，请检查邮箱', 'info')
     return redirect(url_for('blog.index'))
 
@@ -108,10 +112,10 @@ def forget_password():
 
     form = ForgetPasswordForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data.lower()).first()
-        if user:
-            token = generate_token(user=user, operation=Operations.RESET_PASSWORD)
-            send_reset_password_email(user=user, token=token)
+        admin = Admin.query.filter_by(email=form.email.data.lower()).first()
+        if admin:
+            token = generate_token(admin=admin, operation=Operations.RESET_PASSWORD)
+            send_reset_password_email(admin=admin, token=token)
             flash('改密邮件已发送，请检查邮箱.', 'info')
             return redirect(url_for('.login'))
         flash('非法邮箱地址.', 'warning')
@@ -126,10 +130,10 @@ def reset_password(token):
 
     form = ResetPasswordForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data.lower()).first()
-        if user is None:
+        admin = Admin.query.filter_by(email=form.email.data.lower()).first()
+        if admin is None:
             return redirect(url_for('blog.index'))
-        if validate_token(user=user, token=token, operation=Operations.RESET_PASSWORD,new_password=form.password.data):
+        if validate_token(admin=admin, token=token, operation=Operations.RESET_PASSWORD,new_password=form.password.data):
             flash('密码更新.', 'success')
             return redirect(url_for('.login'))
         else:

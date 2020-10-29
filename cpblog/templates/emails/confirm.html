@@ -1,4 +1,4 @@
-<p>Hello {{ user.username }},</p>
+<p>Hello {{ admin.username }},</p>
 <p>Welcome to <b>Albumy</b>!</p>
 <p>Please visit the link below to verify your email address:<br>
     <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">{{ url_for('auth.confirm', token=token, _external=True) }}</a>
