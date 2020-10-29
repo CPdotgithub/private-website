@@ -15,11 +15,29 @@ class Admin(db.Model,UserMixin):
     name = db.Column(db.String(30))
     about = db.Column(db.Text)
     confirmed = db.Column(db.Boolean,default=False)
+    # orders = db.relationship('Order',back_populates='admin')
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
     def validate_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+# class Order(db.Model):
+#     id = db.Column(db.Integer,primary_key=True)
+#     stock_id = db.Column(db.Integer,db.ForeignKey('stock.id'))
+#     buyer_id = db.Column(db.Integer,db.ForeignKey('admin.id'))
+#     admin = db.relationship('admin',back_populates='orders')
+#     exchange_date = db.Column(db.DateTime)
+#     exchange_type = db.Column(db.Boolean)
+#     exchange_amount = db.Column(db.Integer)
+
+# class stock(db.Model):
+#     id = db.Column(db.Integer,primary_key=True)
+#     full_id = db.Column(db.String(30),unique=True,index=True)
+
+
+
+
 
 
 class Category(db.Model):
@@ -33,19 +51,6 @@ class Category(db.Model):
             post.category = default_category
         db.session.delete(self)
         db.session.commit()
-
-class VedioCategory(db.Model):
-    id = db.Column(db.Integer,primary_key=True)
-    name = db.Column(db.String(30),unique=True)
-    
-
-
-class Vedio(db.Model):
-    id = db.Column(db.Integer,primary_key=True)
-    title = db.Column(db.String(60))
-    body = db.Column(db.Text)
-    timrstamp = db.Column(db.DateTime,default=datetime.utcnow)
-
 
 class Post(db.Model):
     id = db.Column(db.Integer,primary_key=True)
@@ -90,7 +95,17 @@ class User(db.Model,UserMixin):
     def validate_password(self,password):
         return check_password_hash(self.password_hash,password)
 
+class VedioCategory(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    name = db.Column(db.String(30),unique=True)
+    
 
+
+class Vedio(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    title = db.Column(db.String(60))
+    body = db.Column(db.Text)
+    timrstamp = db.Column(db.DateTime,default=datetime.utcnow)
 
 
 
@@ -99,5 +114,4 @@ class User(db.Model,UserMixin):
 
 #financial data
 
-# class Stock(db.Model):
-#     id = db.Column(db.String(1,20),primary_key=True)
+
