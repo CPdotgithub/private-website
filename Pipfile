@@ -57,6 +57,7 @@ faker = "*"
 flask-restful = "*"
 flask-cors = "*"
 bootstrap-flask = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
