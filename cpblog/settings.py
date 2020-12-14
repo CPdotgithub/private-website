@@ -16,11 +16,26 @@ class BaseConfig(object):
     CPBLOG_MAIL_SUBJECT_PREFIX = "CP-Home"
     CPBLOG_EMAIL = os.getenv('MAIL_SENDER')
     CPBLOG_POST_PER_PAGE = 10
+    CPBLOG_STOCK_PER_PAGE = 10
     CPBLOG_MANAGE_POST_PER_PAGE = 15
     CPBLOG_COMMENT_PER_PAGE = 15
     CPBLOG_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
     BOOTSTRAP_SERVE_LOCAL = True
     DATABASE_QUERY_TIMEOUT = 1
+    CELERY_BROKER_URL = "amqp://root:091018@localhost:5672//"
+    #CELERY_RESULT_BACKEND = "amqp://root:091018@localhost:5672//"
+    # CELERYBEAT_SCHEDULE =  {
+    #     'daily_data_update' :{
+    #         'task':
+    #     }
+    # }
+    # CACHE_TYPE = 'redis'
+    # CACHE_REDIS_HOST  = 'localhost'
+    # CACHE_REDIS_PORT = '6379'
+    # CACHE_REDIS
+
+
+
 
 
     CPBLOG_UPLOAD_PATH = os.path.join(basedir, 'uploads')

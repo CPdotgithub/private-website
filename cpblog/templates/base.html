@@ -12,6 +12,13 @@
               href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'black_swan')) }}"
               type="text/css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+        <style>
+            .center {
+                float: none; 
+        margin-left: auto; 
+        margin-right: auto; 
+            }
+        </style>
     {% endblock head %}
 </head>
 <body>
@@ -31,7 +38,7 @@
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">股票</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">选股</a>
-            <a class="dropdown-item" href="#">模拟交易</a>
+            <a class="dropdown-item" href="#">研报</a>
             <!-- <a class="dropdown-item" href="#">Something else here</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Separated link</a> -->
@@ -39,7 +46,7 @@
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href="https://jx.688ing.com/">影视</a>
+            <a class="nav-link" href="/videos">影视</a>
         </li>
         
         <li class="nav-item active">
@@ -96,6 +103,9 @@
   </ul>
   </nav>
 {% endblock nav %}
+
+
+
 
 <main class="container">
     {% for message in get_flashed_messages(with_categories=True) %}

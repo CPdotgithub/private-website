@@ -3,9 +3,8 @@ from flask_login import login_required, current_user, fresh_login_required, logo
 
 from cpblog.decorators import confirm_required, permission_required
 from cpblog.emails import send_change_email_email
-from cpblog.extensions import db, avatars
-from cpblog.forms.user import EditProfileForm, UploadAvatarForm, CropAvatarForm, ChangeEmailForm, \
-    ChangePasswordForm, NotificationSettingForm, PrivacySettingForm, DeleteAccountForm
+from cpblog.extensions import db
+
 from cpblog.models import User, Photo, Collect
 from cpblog.notifications import push_follow_notification
 from cpblog.settings import Operations

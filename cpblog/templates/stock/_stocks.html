@@ -1,0 +1,18 @@
+{% if stocks %}
+    {% for stock in stocks %}
+        <h3 class="text-primary">
+            <a href="{{ url_for('.show_stock', stock_id=stockinfo.id) }}">{{ stockinfo.name }}</a>
+            <a>{{ stockinfo.a_code }}</a>
+        </h3>
+    
+     
+        {% if not loop.last %}
+            <hr>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div class="tip">
+        <h5>No stocks yet.</h5>
+
+    </div>
+{% endif %}

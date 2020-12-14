@@ -58,6 +58,8 @@ flask-restful = "*"
 flask-cors = "*"
 bootstrap-flask = "*"
 gunicorn = "*"
+requests = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.6"

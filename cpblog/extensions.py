@@ -5,7 +5,8 @@ from flask_ckeditor import CKEditor
 from flask_wtf import CSRFProtect
 from flask_migrate import Migrate
 from flask_login import LoginManager
-
+from flask_celery import Celery
+# from flask_cache import Cache
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
@@ -14,8 +15,8 @@ mail = Mail()
 login_manager = LoginManager()
 csrf = CSRFProtect()
 migrate = Migrate()
-
-
+celery = Celery()
+# cache = Cache()
 
 
 @login_manager.user_loader

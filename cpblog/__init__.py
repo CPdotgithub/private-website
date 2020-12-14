@@ -12,7 +12,8 @@ from cpblog.models import Admin,Category,Post,Comment
 from cpblog.blueprints.admin import admin_bp
 from cpblog.blueprints.auth import auth_bp
 from cpblog.blueprints.blog import blog_bp
-#from cpblog.blueprints.video import video_bp
+from cpblog.blueprints.video import video_bp
+#from cpblog.blueprints.stock import stock_bp
 #from cpblog.apis.v1 import api_v1
 
 
@@ -76,13 +77,15 @@ def register_extensions(app):
     migrate.init_app(app, db)
     csrf.init_app(app)
     mail.init_app(app)
+    
 
 
 def register_blueprints(app):
     app.register_blueprint(blog_bp)
     app.register_blueprint(admin_bp,url_prefix='/admin')
     app.register_blueprint(auth_bp,url_prefix='/auth') 
-    #app.register_blueprint(video_bp,url_prefix='/videos')
+    app.register_blueprint(video_bp,url_prefix='/videos')
+    #app.register_blueprint(stock_bp,url_prefix='/stock')
     #app.register_blueprint(api_v1,url_prefix='/api/v1')
 
 
@@ -181,11 +184,6 @@ def register_commands(app):
             )
             admin.set_password(password)
             db.session.add(admin)
-
-
-
-
-
 
         category = Category.query.first()
         if category is None:

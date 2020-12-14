@@ -45,3 +45,11 @@ def send_new_comment_email(post):
 def send_new_reply_email(comment):
     post_url = url_for('blog.show_post',post_id=comment.post_id, _external=True) + '#comments'
     send_mail(subject='New reply',to=comment.email,template='emails/send_new_reply_email',comment=comment,post_url=post_url)
+
+
+def send_new_order_email(order,to):
+    # send_mail(subject='New order',to=to,template='emails/send_new_order_email',)
+    pass
+
+def send_week_report_email(account):
+    pass
