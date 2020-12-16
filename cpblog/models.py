@@ -149,7 +149,7 @@ class StockInfo(db.Model):
     name = db.Column(db.String(50),index=True)
     exchange_market = db.Column(db.String(10))
     industry_id = db.Column(db.Integer,db.ForeignKey('industryinfo.id'))
-    stockcategory_id = db.Column(db.String(50),db.ForeignKey('stockcategory.id'))
+    stockcategory_id = db.Column(db.Integer,db.ForeignKey('stockcategory.id'))
     industryinfo = db.relationship("IndustryInfo",back_populates='stocks')
     url = db.Column(db.String(255),unique=True)
     stockcategory = db.relationship("StockCategory",back_populates='stocks')
