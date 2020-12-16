@@ -22,8 +22,8 @@ class BaseConfig(object):
     CPBLOG_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
     BOOTSTRAP_SERVE_LOCAL = True
     DATABASE_QUERY_TIMEOUT = 1
-    CELERY_BROKER_URL = "redis://localhost:6379/0"
-    CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
+    CELERY_BROKER_URL = os.getenv('REDIS_URL')
+    CELERY_RESULT_BACKEND = os.getenv('REDIS_URL')
     # CELERYBEAT_SCHEDULE =  {
     #     'daily_data_update' :{
     #         'task':
@@ -46,7 +46,7 @@ class BaseConfig(object):
 class DevelopmentConfig(BaseConfig):
 
     SQLALCHEMY_DATABASE_URI = os.path.join(os.getenv('DATABASE_URI'),'development')
-    CACHE_TYPE='simple'
+    CACHE_TYPE='null'
 
 class Operations:
     CONFIRM = 'confirm'

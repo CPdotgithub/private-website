@@ -16,6 +16,7 @@ from cpblog.blueprints.video import video_bp
 #from cpblog.blueprints.stock import stock_bp
 #from cpblog.apis.v1 import api_v1
 from celery import Celery
+# from gevent import monkey
 
 
 
@@ -23,6 +24,8 @@ basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 
 def create_app(config_name=None):
+    # from gevent import pywsgi
+    # monkey.patch_all()
     if config_name is None:
         config_name = os.getenv('FLASK_CONFIG','development')
     app = Flask('cpblog')
@@ -37,11 +40,14 @@ def create_app(config_name=None):
     register_template_context(app)
     register_request_handlers(app)
     register_extensions(app)
+    # app.debug = True
+    # server = pywsgi.WSGIServer( ('127.0.0.1', 5000 ), app )
+    # server.serve_forever()
     return app
 
 def make_celery(app=None):
     
-    app= app or create_app(os.getenv('FLASK_CONFIG')or 'development')
+    app= app or create_app(os.getenv('FLASK_ENV')or 'development')
     celery= Celery('cpblog',broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
     celery.conf.update(app.config)
     TaskBase= celery.Task
