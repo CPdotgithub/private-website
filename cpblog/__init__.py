@@ -7,7 +7,7 @@ from flask_login import current_user
 from flask_sqlalchemy import get_debug_queries
 from flask_wtf.csrf import CSRFError
 from cpblog.settings import config
-from cpblog.extensions import bootstrap,db, login_manager, csrf, ckeditor, mail, migrate
+from cpblog.extensions import bootstrap,db, login_manager, csrf, ckeditor, mail, migrate,cache
 from cpblog.models import Admin,Category,Post,Comment
 from cpblog.blueprints.admin import admin_bp
 from cpblog.blueprints.auth import auth_bp
@@ -15,10 +15,12 @@ from cpblog.blueprints.blog import blog_bp
 from cpblog.blueprints.video import video_bp
 #from cpblog.blueprints.stock import stock_bp
 #from cpblog.apis.v1 import api_v1
+from celery import Celery
 
 
 
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
 
 def create_app(config_name=None):
     if config_name is None:
@@ -36,6 +38,21 @@ def create_app(config_name=None):
     register_request_handlers(app)
     register_extensions(app)
     return app
+
+def make_celery(app=None):
+    
+    app= app or create_app(os.getenv('FLASK_CONFIG')or 'development')
+    celery= Celery('cpblog',broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
+    celery.conf.update(app.config)
+    TaskBase= celery.Task
+    class ContextTask(TaskBase):
+        abstract= True
+        def __call__(self,*args,**kwargs):
+            with app.app_context():
+                return TaskBase.__call__(self,*args,**kwargs)
+    celery.Task= ContextTask
+    return celery
+
 
 def register_logging(app):
     class RequestFormatter(logging.Formatter):
@@ -77,6 +94,7 @@ def register_extensions(app):
     migrate.init_app(app, db)
     csrf.init_app(app)
     mail.init_app(app)
+    cache.init_app(app)
     
 
 

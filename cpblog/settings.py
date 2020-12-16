@@ -22,18 +22,18 @@ class BaseConfig(object):
     CPBLOG_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
     BOOTSTRAP_SERVE_LOCAL = True
     DATABASE_QUERY_TIMEOUT = 1
-    CELERY_BROKER_URL = "amqp://root:091018@localhost:5672//"
-    #CELERY_RESULT_BACKEND = "amqp://root:091018@localhost:5672//"
+    CELERY_BROKER_URL = "redis://localhost:6379/0"
+    CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
     # CELERYBEAT_SCHEDULE =  {
     #     'daily_data_update' :{
     #         'task':
     #     }
     # }
-    # CACHE_TYPE = 'redis'
-    # CACHE_REDIS_HOST  = 'localhost'
-    # CACHE_REDIS_PORT = '6379'
-    # CACHE_REDIS
-
+    CACHE_TYPE = 'redis'
+    CACHE_REDIS_HOST  = 'localhost'
+    CACHE_REDIS_PORT = '6379'
+    CACHE_REDIS_PASSWORD='redis_password'
+    CACHE_REDIS_DB='0'
 
 
 
@@ -46,6 +46,7 @@ class BaseConfig(object):
 class DevelopmentConfig(BaseConfig):
 
     SQLALCHEMY_DATABASE_URI = os.path.join(os.getenv('DATABASE_URI'),'development')
+    CACHE_TYPE='null'
 
 class Operations:
     CONFIRM = 'confirm'
@@ -66,6 +67,7 @@ class  TestConfig(BaseConfig):
 
 class ProductionConfig(BaseConfig):
     SQLALCHEMY_DATABASE_URI = os.path.join(os.getenv('DATABASE_URI'),'data')
+    CACHE_TYPE='simple'
 
 config = {
     'development':DevelopmentConfig,
