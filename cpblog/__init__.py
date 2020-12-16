@@ -48,6 +48,8 @@ def create_app(config_name=None):
 def make_celery(app=None):
     
     app= app or create_app(os.getenv('FLASK_ENV')or 'development')
+    # redis_password=os.getenv('redis_password')
+    # celery= Celery('cpblog',broker='redis://:091018@127.0.0.1:6379/0',backend='redis://:091018@127.0.0.1:6379/0')
     celery= Celery('cpblog',broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
     celery.conf.update(app.config)
     TaskBase= celery.Task

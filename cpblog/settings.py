@@ -22,8 +22,9 @@ class BaseConfig(object):
     CPBLOG_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
     BOOTSTRAP_SERVE_LOCAL = True
     DATABASE_QUERY_TIMEOUT = 1
-    CELERY_BROKER_URL = os.getenv('REDIS_URL')
-    CELERY_RESULT_BACKEND = os.getenv('REDIS_URL')
+ 
+    CELERY_BROKER_URL = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/0'
+    CELERY_RESULT_BACKEND = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/0'
     # CELERYBEAT_SCHEDULE =  {
     #     'daily_data_update' :{
     #         'task':
