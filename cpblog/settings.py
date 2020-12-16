@@ -46,7 +46,7 @@ class BaseConfig(object):
 class DevelopmentConfig(BaseConfig):
 
     SQLALCHEMY_DATABASE_URI = os.path.join(os.getenv('DATABASE_URI'),'development')
-    CACHE_TYPE='null'
+    CACHE_TYPE='simple'
 
 class Operations:
     CONFIRM = 'confirm'
