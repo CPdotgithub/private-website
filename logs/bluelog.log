@@ -837,3 +837,1521 @@ FROM `admin`
  LIMIT %(param_1)s]
 [parameters: {'param_1': 1}]
 (Background on this error at: http://sqlalche.me/e/13/e3q8)
+2020-12-17 02:09:56,800 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:09:57,485 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:09:58,012 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:00,012 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:01,203 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:02,059 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:02,585 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:03,006 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:03,475 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:18,904 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:19,426 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:19,910 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:20,521 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:20,970 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:21,539 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:27,078 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:27,476 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:28,025 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:54,160 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:54,628 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:56,522 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:57,018 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:58,161 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:10:59,130 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:11:29,762 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:11:30,435 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:11:31,027 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:39,487 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:39,930 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:40,367 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:41,890 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:42,625 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:44,246 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:45,107 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:46,022 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:51,847 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:52,312 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:13:54,038 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:32,113 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:32,640 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:33,060 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:34,678 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:40,178 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:45,566 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:15:46,028 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-17 02:16:17,048 - cpblog - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/blog.py", line 23, in index
+    return render_template('blog/index.html', pagination=pagination, posts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 117, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
+    <div class="page-footer">{{ render_pager(pagination) }}</div>
+jinja2.exceptions.UndefinedError: 'render_pager' is undefined
