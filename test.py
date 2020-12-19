@@ -1,14 +1,26 @@
-class A(object):
-    def func(self,num):
-        b = num**2
-        return b
-class B(A):
-    def func2(self):
-        print(self.func(10))
+[program:vservice]
+command=/root/myproject/private-website/.venv/bin/gunicorn -c /root/myproject/private-website/config.py wsgi:app 
+ process_name=%(program_name)s
+numprocs=1      
+directory=/root/myproject/private-website/  
+ autostart=true
+ autorestart=unexpected      
+user=CP                 
+stdout_logfile=/root/myproject/private-website/logs/supervisor/stdout.log
+stderr_logfile=/root/myproject/private-website/logs/supervisor/stderr.log
 
-B().func2()
 
 
+
+[program:celery]
+command=/root/myproject/private-website/.venv/bin/celery -A  cpblog.tasks worker   -l INFO
+process_name=%(program_name)s
+numprocs=1   
+directory=/root/myproject/private-website/
+autostart=true 
+autorestart=unexpected 
+stdout_logfile=/root/myproject/private-website/logs/celery/stdout.log
+stderr_logfile=/root/myproject/private-website/logs/celery/stderr.log
 
 
 
