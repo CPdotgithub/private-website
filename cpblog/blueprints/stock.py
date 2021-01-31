@@ -7,7 +7,7 @@ from cpblog.extensions import db,cache,celery
 from cpblog.models import Admin,Account,Order,LoanOrder, IndustryInfo,StockInfo,InstitutionInfo,InstitutionStockDaily,StockDaily,QuantPost
 from cpblog.emails import send_new_order_email,send_week_report_email
 from datetime import datetime
-from cpblog.tasks import get_quant_posts
+# from cpblog.tasks import get_quant_posts
 from celery import Celery
 import requests ,json,time
 from pyecharts import options as opts
