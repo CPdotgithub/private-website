@@ -17,58 +17,58 @@ import tushare as ts
 
 stock_bp = Blueprint('stock', __name__)
 
-def kline_base(code) -> Kline:
-    pro = ts.pro_api('d51f868eec8a150f0f399be85c66d5882a6dbaa25aed81c6abe9f6fb')
+# def kline_base(code) -> Kline:
+#     pro = ts.pro_api('d51f868eec8a150f0f399be85c66d5882a6dbaa25aed81c6abe9f6fb')
 
-    df = pro.daily(ts_code=code, start_date='20200101')
-    df.index=pd.to_datetime(df.trade_date)
-    df=df.sort_index()
-    v1=list(df.loc[:,['open','close','low','high']].values.tolist())
-    t=df.index
-    v0=list(t.strftime('%Y%m%d'))
+#     df = pro.daily(ts_code='600818.SH', start_date='20200101')
+#     df.index=pd.to_datetime(df.trade_date)
+#     df=df.sort_index()
+#     v1=list(df.loc[:,['open','close','low','high']].values.tolist())
+#     t=df.index
+#     v0=list(t.strftime('%Y%m%d'))
 
 
-    c = (
-        Kline()
-        .add_xaxis(v0)
-        .add_yaxis("kline", v1)
-        .set_global_opts(
-            xaxis_opts=opts.AxisOpts(is_scale=True),
-            yaxis_opts=opts.AxisOpts(
-                is_scale=True,
-                splitarea_opts=opts.SplitAreaOpts(
-                    is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)
-                ),
-            ),
-            datazoom_opts=[opts.DataZoomOpts(pos_bottom="-2%")],
+#     c = (
+#         Kline()
+#         .add_xaxis(v0)
+#         .add_yaxis("kline", v1)
+#         .set_global_opts(
+#             xaxis_opts=opts.AxisOpts(is_scale=True),
+#             yaxis_opts=opts.AxisOpts(
+#                 is_scale=True,
+#                 splitarea_opts=opts.SplitAreaOpts(
+#                     is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)
+#                 ),
+#             ),
+#             datazoom_opts=[opts.DataZoomOpts(pos_bottom="-2%")],
 
-        )
+#         )
         
-    )
-    return c
+#     )
+#     return c
 
 
 
 
 
 
-@stock_bp.route('/')
-def index():
+# @stock_bp.route('/')
+# def index():
     
-    return render_template('stock/index.html')
+#     return render_template('stock/index.html')
 
 
 
-@stock_bp.route("/kline/<string:code>")
-def kline(code):
+# @stock_bp.route("/kline/")
+# def kline():
   
-    c = kline_base(code)
-    return c.dump_options_with_quotes()
+#     c = kline_base()
+#     return c.dump_options_with_quotes()
 
-@stock_bp.route('/stockinfo/<string:code>')
-def game(code):   
+# @stock_bp.route('/stockinfo/<string:code>')
+# def game(code):   
     
-    return render_template('stock/report.html',code=code)
+#     return render_template('stock/report.html',code=code)
 
 
 @cache.cached(60*60)
