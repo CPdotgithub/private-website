@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}研报收藏{% endblock %}
+
+{% block content %}
+
+      {% if quantposts %}
+      {% for quantpost in quantposts %}
+
+      <div class="alert alert-dismissible alert-secondary">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4 class="alert-heading">{{quantpost.title}}</h4>
+        <p class="mb-0">{{quantpost.excerpt|striptags|truncate}}
+
+  
+            <p class="lead">
+                
+                <a class="btn btn-primary btn-lg" href="{{url_for('stock.delete_post',id={{quantpost.id}})}}" role="button">删除</a>
+              
+                <a class="btn btn-primary btn-lg" href="{{url_for('stock.read_post',post_id=quantpost.id)}}" role="button">更多</a>
+              
+              </p>
+        </p>
+        
+      </div>
+
+    
+
+      {% endfor %}
+
+  {% endif %}
+     
+    
+  
+{% endblock %}

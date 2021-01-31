@@ -8130,3 +8130,2162 @@ Traceback (most recent call last):
   File "/root/myproject/private-website/cpblog/templates/blog/index.html", line 17, in block "content"
     <div class="page-footer">{{ render_pager(pagination) }}</div>
 jinja2.exceptions.UndefinedError: 'render_pager' is undefined
+2020-12-20 05:22:03,239 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 15, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 23, in top-level template code
+    {% block nav %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 99, in block "nav"
+    {{ render_nav_item('admin.settings', 'Settings') }}
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+2020-12-20 05:22:06,370 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 15, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 23, in top-level template code
+    {% block nav %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 99, in block "nav"
+    {{ render_nav_item('admin.settings', 'Settings') }}
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+2020-12-20 05:22:08,471 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 15, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 23, in top-level template code
+    {% block nav %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 99, in block "nav"
+    {{ render_nav_item('admin.settings', 'Settings') }}
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+2020-12-20 09:52:55,484 - cpblog - ERROR - Exception on /stock/quant_post [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 21, in quant_post
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2020-12-20 09:52:59,280 - cpblog - ERROR - Exception on /stock/quant_post [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 21, in quant_post
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2020-12-20 09:54:03,535 - cpblog - ERROR - Exception on /stock/quant_post [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 21, in quant_post
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2020-12-20 09:54:05,594 - cpblog - ERROR - Exception on /stock/quant_post [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 21, in quant_post
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2020-12-27 11:32:29,360 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 33, in quant_posts
+    quantposts = task.get()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 230, in get
+    on_message=on_message,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/backends/asynchronous.py", line 201, in wait_for_pending
+    return result.maybe_throw(callback=callback, propagate=propagate)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 335, in maybe_throw
+    self.throw(value, self._to_remote_traceback(tb))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 328, in throw
+    self.on_ready.throw(*args, **kwargs)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/vine/promises.py", line 234, in throw
+    reraise(type(exc), exc, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/vine/utils.py", line 30, in reraise
+    raise value
+celery.exceptions.NotRegistered: 'tasks.get_quant_posts'
+2020-12-27 11:33:23,645 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 33, in quant_posts
+    quantposts = task.get()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 230, in get
+    on_message=on_message,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/backends/asynchronous.py", line 201, in wait_for_pending
+    return result.maybe_throw(callback=callback, propagate=propagate)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 335, in maybe_throw
+    self.throw(value, self._to_remote_traceback(tb))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/celery/result.py", line 328, in throw
+    self.on_ready.throw(*args, **kwargs)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/vine/promises.py", line 234, in throw
+    reraise(type(exc), exc, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/vine/utils.py", line 30, in reraise
+    raise value
+celery.exceptions.NotRegistered: 'tasks.get_quant_posts'
+2020-12-27 11:42:32,969 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 11:43:41,998 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    #return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 11:43:44,443 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    #return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 11:43:47,394 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    #return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 11:43:50,065 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    #return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 12:03:06,479 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 12:06:11,317 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 12:06:16,817 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:03:19,560 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:03:24,595 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:03:38,635 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:03:41,577 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 43, in quant_posts
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:06:13,889 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:06:20,112 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:08:39,021 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:10:51,054 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% block title %}研报{% endblock %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="#">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:10:53,653 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 3, in top-level template code
+    {% block title %}研报{% endblock %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h3 class="text-primary"><a href="#">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:12:16,616 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 10, in block "content"
+    <!-- <h3 class="text-primary"><a href="{{ url_for('stock.read_post', post_id=post.id)  }}">{{ quantpost.title }}</a></h3>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:13:25,165 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 10, in block "content"
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:13:25,974 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 10, in block "content"
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-27 15:13:27,804 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 10, in block "content"
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2020-12-28 17:18:21,922 - cpblog - ERROR - Exception on /stock/collected_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 54, in collected_posts
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/collectposts.html", line 15, in template
+    <h3 class="text-primary">{{quantpost.date}</h3>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2020-12-28 17:24:30,657 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:24:34,706 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:24:38,209 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:25:12,128 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:27:56,406 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:31:39,002 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in template
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id={{quantpost.id}},title={{quantpost.title}},excerpt={{quantpost.excerpt}})}}" role="button">收藏</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-12-28 17:39:18,627 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title,excerpt=quantpost.excerpt)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['excerpt', 'id', 'title']. Did you forget to specify values ['page_num']?
+2020-12-28 17:40:35,216 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title,excerpt=quantpost.excerpt)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['excerpt', 'id', 'title']. Did you forget to specify values ['page_num']?
+2020-12-28 17:40:36,213 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=posts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title,excerpt=quantpost.excerpt)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['excerpt', 'id', 'title']. Did you forget to specify values ['page_num']?
+2020-12-28 17:41:02,117 - cpblog - ERROR - Exception on /stock/add_post/187651 [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: add_post() missing 2 required positional arguments: 'title' and 'excerpt'
+2020-12-28 22:09:30,162 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 8, in template
+    <link rel="icon" href="{{ url_for('static', filename='cp1.ico') }}">
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2020-12-28 22:09:36,052 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 8, in template
+    <link rel="icon" href="{{ url_for('static', filename='cp1.ico') }}">
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2020-12-28 22:20:13,528 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 121, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
+2020-12-28 22:21:25,274 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 41, in quant_posts
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 137, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2021-01-19 18:21:19,080 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 44, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['id', 'title']. Did you mean 'stock.read_post' instead?
+2021-01-19 18:21:32,056 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 20, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2021-01-19 18:21:36,408 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 20, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2021-01-20 01:55:06,045 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 20, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2021-01-20 01:55:09,683 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 44, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 125, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['id', 'title']. Did you mean 'stock.read_post' instead?
+2021-01-25 15:44:34,133 - cpblog - ERROR - Exception on /stock/ [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 20, in index
+    return render_template('stock/index.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 2, in top-level template code
+    {% from 'bootstrap/pagination.html' import render_pager %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 133, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/index.html", line 35, in block "content"
+    {{ option.text }}
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'option' is undefined
+2021-01-25 15:46:06,707 - cpblog - ERROR - Exception on /stock/game [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 25, in game
+    return render_template('stock/game.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: stock/game.html
+2021-01-28 03:47:48,289 - cpblog - ERROR - Exception on /stock/game [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 70, in game
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 10, in top-level template code
+    {% block nav %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 102, in block "nav"
+    {{ render_nav_item('admin.settings', 'Settings') }}
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+2021-01-28 03:47:51,870 - cpblog - ERROR - Exception on /stock/game [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 70, in game
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 10, in top-level template code
+    {% block nav %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 102, in block "nav"
+    {{ render_nav_item('admin.settings', 'Settings') }}
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+2021-01-28 03:49:51,531 - cpblog - ERROR - Exception on /stock/game [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 70, in game
+    return render_template('stock/test.html')
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/test.html", line 22, in template
+    url: "{{ url_for('stock.kline') }}",
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-02-01 04:46:35,755 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h4 class="alert-heading"><a href="{{url_for('stock.read_post',post_id=quantpost.id)}}" >{{quantpost.title}}</a></h4>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.read_post' with values ['post_id']. Did you mean 'stock.quant_posts' instead?
+2021-02-01 04:47:24,020 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h4 class="alert-heading"><a href="{{url_for('stock.read_post',post_id=quantpost.id)}}" >{{quantpost.title}}</a></h4>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.read_post' with values ['post_id']. Did you mean 'stock.quant_posts' instead?
+2021-02-01 04:49:56,837 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['id', 'title']. Did you mean 'stock.read_post' instead?
+2021-02-01 04:50:35,875 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h4 class="alert-heading"><a href="{{url_for('stock.read_post',post_id=quantpost.id)}}" >{{quantpost.title}}</a></h4>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.read_post' with values ['post_id']. Did you mean 'stock.quant_posts' instead?
+2021-02-01 04:52:08,474 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 12, in block "content"
+    <h4 class="alert-heading"><a href="{{url_for('stock.read_post',post_id=quantpost.id)}}" >{{quantpost.title}}</a></h4>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.read_post' with values ['post_id']. Did you mean 'stock.quant_posts' instead?
+2021-02-01 04:52:30,245 - cpblog - ERROR - Exception on /stock/quant_posts [GET]
+Traceback (most recent call last):
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/cp/cpdotgithub/private-website/cpblog/blueprints/stock.py", line 93, in quant_posts
+    return render_template('stock/quantposts.html',quantposts=quantposts)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/base.html", line 134, in top-level template code
+    {% block content %}{% endblock content %}
+  File "/home/cp/cpdotgithub/private-website/cpblog/templates/stock/quantposts.html", line 18, in block "content"
+    <a class="btn btn-primary btn-lg" href="{{url_for('stock.add_post',id=quantpost.id,title=quantpost.title)}}" role="button">收藏</a>
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/cp/cpdotgithub/private-website/.venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'stock.add_post' with values ['id', 'title']. Did you mean 'stock.read_post' instead?

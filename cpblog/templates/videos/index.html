@@ -5,119 +5,117 @@
 
 
 {% block content %}
-
-
-<div style="text-align: center; width: 1100px">
-    <img alt="" src="/static/cp1.ico" style="margin: 0 auto;" />
-    <h1 class="h3 mb-3 fw-normal">FREE-VIP</h1>
+<body>
+    <div class="parent">
+    <div class="child">
+        <img alt="" src="/static/cp1.ico" style="margin: 0 auto;" />
+        <h1 class="h3 mb-3 fw-normal">FREE-VIP</h1>
+      </div>
     </div>
     {{ render_form(form) }}
-<!-- <div class="col-md-14 column" p style="text-align: center;">
-    <div class="panel panel-default">
-        <div id="kj" class="panel-body">
-                    <iframe width="100%" height="600px" id="player" allowTransparency="true" frameborder="0" scrolling="no" src="https://z1.m1907.cn/?jx=%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA">></iframe>
-        </div>
-    </div>
-</div> -->
-    
-    <br></br>
-    {% if current_user.is_authenticated %}
-
-    
-    
-    
-        {%if videos%}
-        <div>
-        {%for video in videos%}
-     
-      
-        <!-- <div class="alert alert-dismissible alert-secondary"> -->
-            <!-- <button type="button" class="close" data-dismiss="alert"  >&times;</button> -->
-             <a href="{{url_for('videos.history',videoname=video.videoname)}}" class="alert-link">{{video.videoname}}</a>
-             <button class="badge badge-warning"><a href="{{url_for('videos.delete_history',videoname=video.videoname)}}">删除</a></button>
-        <!-- </div> -->
-
-
-             
-              
-     
-
-        
-        {%endfor%}
-    </div>
-        <!-- <div class="form-group">
-            <label for="exampleSelect1">更多</label>
-            <select class="form-control" id="exampleSelect1">
-              <option >1</option>
-            
-            </select>
-          </div> -->
-          <br></br>
-          <button type="button" class="btn btn-primary btn-lg"><a href="{{url_for('videos.clear_history')}}">清空记录</a></button>
-          
-  
-        {% endif%}
-   
-{% endif %}
-
-
-    
-      
-      <div class="column" style="margin-top:85px;margin-left: 250px">
-        <div class="ui equal width grid">
-            <div class="equal width row">
-                <div class="column link">
-                    <a class="" href="http://www.iqiyi.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/iqiyi.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://www.youku.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/youku.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://v.qq.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/qqtv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://www.mgtv.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/mgtv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-            </div>
-            <div class="equal width row">
-                <div class="column link">
-                    <a class="" href="http://tv.sohu.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/sohutv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://www.le.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/letv.png" style="border:1px solid #f5f5f5;padding:6px 8px;border-radius:.28571429rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://www.tudou.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/tudou.png" style="border:1px solid #f5f5f5;padding:6px 8px;border-radius:.28571429rem;background:white;">
-                    </a>
-                </div>
-                <div class="column link">
-                    <a class="" href="http://www.pptv.com/" rel="nofollow" target="_blank">
-                        <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/pptv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
-    
-    <p class="mt-5 mb-3 text-muted">检测IP  异常封禁  耗子尾汁</p>
  
-</main>
-
-  
+        
+        <br></br>
+        {% if current_user.is_authenticated %}
+    
+        
+        
+        
+            {%if videos%}
+            <div>
+            {%for video in videos%}
+         
+          
+            <!-- <div class="alert alert-dismissible alert-secondary"> -->
+                <!-- <button type="button" class="close" data-dismiss="alert"  >&times;</button> -->
+                 <a href="{{url_for('videos.history',videoname=video.videoname)}}" class="alert-link">{{video.videoname}}</a>
+                 <button class="badge badge-warning"><a href="{{url_for('videos.delete_history',videoname=video.videoname)}}">删除</a></button>
+            <!-- </div> -->
+    
+    
+                 
+                  
+         
+    
+            
+            {%endfor%}
+        </div>
+            <!-- <div class="form-group">
+                <label for="exampleSelect1">更多</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option >1</option>
+                
+                </select>
+              </div> -->
+              <br></br>
+              <button type="button" class="btn btn-primary btn-lg"><a href="{{url_for('videos.clear_history')}}">清空记录</a></button>
+              
+      
+            {% endif%}
+       
+    {% endif %}
+    
+    
+        
+          
+          <div class="column" style="margin-top:85px;margin-left: 250px">
+            <div class="ui equal width grid">
+                <div class="equal width row">
+                    <div class="column link">
+                        <a class="" href="http://www.iqiyi.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/iqiyi.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://www.youku.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/youku.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://v.qq.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/qqtv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://www.mgtv.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/mgtv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                </div>
+                <div class="equal width row">
+                    <div class="column link">
+                        <a class="" href="http://tv.sohu.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/sohutv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://www.le.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/letv.png" style="border:1px solid #f5f5f5;padding:6px 8px;border-radius:.28571429rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://www.tudou.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/tudou.png" style="border:1px solid #f5f5f5;padding:6px 8px;border-radius:.28571429rem;background:white;">
+                        </a>
+                    </div>
+                    <div class="column link">
+                        <a class="" href="http://www.pptv.com/" rel="nofollow" target="_blank">
+                            <img src="//cdn.dgsldz.com/product/wildcat/images/tv/app_logo/pptv.png" style="border: 1px solid rgb(245, 245, 245); padding: 6px 8px; border-radius: 0.285714rem;background:white;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        
+        
+        <p class="mt-5 mb-3 text-muted">检测IP  异常封禁  耗子尾汁</p>
+     
+ 
+    
+      
+    
+</body>
 {% endblock %}
+   

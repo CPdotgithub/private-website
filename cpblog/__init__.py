@@ -13,7 +13,7 @@ from cpblog.blueprints.admin import admin_bp
 from cpblog.blueprints.auth import auth_bp
 from cpblog.blueprints.blog import blog_bp
 from cpblog.blueprints.video import video_bp
-#from cpblog.blueprints.stock import stock_bp
+from cpblog.blueprints.stock import stock_bp
 #from cpblog.apis.v1 import api_v1
 from celery import Celery
 # from gevent import monkey
@@ -44,23 +44,6 @@ def create_app(config_name=None):
     # server = pywsgi.WSGIServer( ('127.0.0.1', 5000 ), app )
     # server.serve_forever()
     return app
-
-def make_celery(app=None):
-    
-    app= app or create_app(os.getenv('FLASK_ENV')or 'development')
-    # redis_password=os.getenv('redis_password')
-    # celery= Celery('cpblog',broker='redis://:091018@127.0.0.1:6379/0',backend='redis://:091018@127.0.0.1:6379/0')
-    celery= Celery('cpblog',broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
-    celery.conf.update(app.config)
-    TaskBase= celery.Task
-    class ContextTask(TaskBase):
-        abstract= True
-        def __call__(self,*args,**kwargs):
-            with app.app_context():
-                return TaskBase.__call__(self,*args,**kwargs)
-    celery.Task= ContextTask
-    return celery
-
 
 def register_logging(app):
     class RequestFormatter(logging.Formatter):
@@ -103,6 +86,7 @@ def register_extensions(app):
     csrf.init_app(app)
     mail.init_app(app)
     cache.init_app(app)
+
     
 
 
@@ -111,7 +95,7 @@ def register_blueprints(app):
     app.register_blueprint(admin_bp,url_prefix='/admin')
     app.register_blueprint(auth_bp,url_prefix='/auth') 
     app.register_blueprint(video_bp,url_prefix='/videos')
-    #app.register_blueprint(stock_bp,url_prefix='/stock')
+    app.register_blueprint(stock_bp,url_prefix='/stock')
     #app.register_blueprint(api_v1,url_prefix='/api/v1')
 
 

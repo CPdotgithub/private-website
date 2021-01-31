@@ -5,7 +5,8 @@ from flask_ckeditor import CKEditor
 from flask_wtf import CSRFProtect
 from flask_migrate import Migrate
 from flask_login import LoginManager
-
+import os
+from celery import Celery
 from flask_caching import Cache
 
 bootstrap = Bootstrap()
@@ -17,6 +18,13 @@ csrf = CSRFProtect()
 migrate = Migrate()
 
 cache = Cache()
+
+CELERY_BROKER_URL = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/0'
+CELERY_RESULT_BACKEND = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/1'
+
+celery = Celery('tasks', broker=CELERY_BROKER_URL, backend=CELERY_RESULT_BACKEND)
+
+
 
 
 @login_manager.user_loader

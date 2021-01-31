@@ -17,6 +17,7 @@ class Admin(db.Model,UserMixin):
     confirmed = db.Column(db.Boolean,default=False)
     account = db.relationship("Account",back_populates='admin')
     videos = db.relationship("VideoHistory",back_populates='admin')
+    quantposts = db.relationship('QuantPost',back_populates='admin')
     def confirmed_user(self,flag):
         self.confirmed = flag 
     
@@ -108,6 +109,28 @@ class Post(db.Model):
     category_id = db.Column(db.Integer,db.ForeignKey('category.id'))
     category = db.relationship('Category',back_populates='posts')
     comments = db.relationship('Comment',back_populates='post',cascade='all,delete-orphan')
+
+
+
+class QuantPost(db.Model):
+    __tablename__='quantpost'
+    id = db.Column(db.Integer,primary_key=True)
+    post_id = db.Column(db.Integer)
+    user_id = db.Column(db.Integer,db.ForeignKey('admin.id'))
+    admin = db.relationship('Admin',back_populates='quantposts')
+
+    title = db.Column(db.String(255))
+    excerpt = db.Column(db.String(512))
+  
+    readtime = db.Column(db.DateTime,default=datetime.now()) 
+  
+    #阅读次数
+    times = db.Column(db.Integer,default=0)
+   
+
+
+
+
 
 
 class Comment(db.Model):

@@ -1,0 +1,143 @@
+{% from 'bootstrap/nav.html' import render_nav_item %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    
+    <link rel="icon" href="{{ url_for('static', filename='cp1.ico') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'black_swan')) }}"
+          type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <style>
+        .center {
+            float: none; 
+    margin-left: auto; 
+    margin-right: auto; 
+        }
+    </style>
+{% endblock head %}
+    <meta charset="UTF-8">
+    <title>模拟交易</title>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+</head>
+<body>
+    {% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">        
+            <li class="nav-item">
+              <a class="nav-link" href="/">博客</a>
+            </li>
+    
+            
+         
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">股票</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/stock/game">实盘模拟</a>
+                <!-- <a class="dropdown-item" href="#">个股信息</a> -->
+                <!-- <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a> -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">外部链接</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="http://www.gov.cn/shuju/chaxun/">宏观经济</a>
+                  <a class="dropdown-item" href="http://data.eastmoney.com/zjlx/dpzjlx.html">沪深</a>
+                  <a class="dropdown-item" href="http://quote.eastmoney.com/center/whsc.html">外汇</a>
+                
+                 
+                  <!-- <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a> -->
+                </div>
+              </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="/videos">影视</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="/about">关于</a>
+            </li>
+          </ul>
+          <ul class="btn btn-secondary my-2 my-sm-0">
+            <a>
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('auth.logout', next=request.full_path) }}">登出</a>
+                {% else %}
+                    <a href="{{ url_for('auth.login', next=request.full_path) }}">登陆</a>
+                {% endif %}
+            </a>
+        </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          {% if current_user.is_authenticated %}
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                     aria-haspopup="true"
+                     aria-expanded="false">
+                      New <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ url_for('admin.new_post') }}">Post</a>
+                      <a class="dropdown-item" href="{{ url_for('admin.new_category') }}">Category</a>
+                      
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                     aria-haspopup="true"
+                     aria-expanded="false">
+                      Manage <span class="caret"></span>
+                      {% if unread_comments %}
+                          <span class="badge badge-success">new</span>
+                      {% endif %}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ url_for('admin.manage_post') }}">Post</a>
+                      <a class="dropdown-item" href="{{ url_for('admin.manage_category') }}">Category</a>
+                      <a class="dropdown-item" href="{{ url_for('admin.manage_comment') }}">
+                          Comment
+                          {% if unread_comments %}
+                              <span class="badge badge-success">{{ unread_comments }}</span>
+                          {% endif %}
+                      </a>
+                      
+                  </div>
+              </li>
+              {{ render_nav_item('admin.settings', 'Settings') }}
+          {% endif %}
+      </ul>
+      </nav>
+    {% endblock nav %}
+    <div id="bar" style="margin-top:85px;margin-left: 85px;width:500px; height:300px;background:white;"></div>
+    <script>
+        $(
+            function () {
+                var chart = echarts.init(document.getElementById('bar'), 'white', {renderer: 'canvas'});                
+                $.ajax({
+                    type: "GET",
+                    url: "{{ url_for('stock.kline'code=code) }}",
+                    dataType: 'json',
+                    success: function (result) {
+                        chart.setOption(result);
+                    }
+                });
+            }
+        )
+    </script>
+</body>
+</html>

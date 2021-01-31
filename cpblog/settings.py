@@ -24,7 +24,8 @@ class BaseConfig(object):
     DATABASE_QUERY_TIMEOUT = 1
  
     CELERY_BROKER_URL = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/0'
-    CELERY_RESULT_BACKEND = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/0'
+    CELERY_RESULT_BACKEND = 'redis://:'+os.getenv('redis_password')+'@127.0.0.1:6379/1'
+   
     # CELERYBEAT_SCHEDULE =  {
     #     'daily_data_update' :{
     #         'task':
