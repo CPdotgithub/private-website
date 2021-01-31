@@ -42,16 +42,4 @@ def get_quant_posts():
     db.session.commit()
 
 
-@celery.task(name='task.stock_daily_data',bind=True,ignore_result=True,default_retry_delay=300,max_retries=5)
-def stock_daily_data(date):
-        bs.login()
-        # 获取交易日 日历
-        rs_date = bs.query_trade_dates(start_date='2020-01-01')
-        date_list = []
-        while (rs_date.error_code == '0') & rs_date.next():
-            date_list.append(rs_date.get_row_data())
-        df_date = pd.DataFrame(date_list,columns=rs_date.fields)
 
-        exchg_date = df_date[df_date["is_trading_day"]=='1']
-        date_list= exchg_date["calendar_date"].to_list()
-      
